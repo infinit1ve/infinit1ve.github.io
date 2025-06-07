@@ -25,6 +25,10 @@ html, body {
   overflow-x: hidden;
 }
 
+div {
+  overflow-y: hidden;
+}
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
@@ -39,13 +43,22 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
-p {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--accent);
+}
+
+.icon {
+  height: 1.333rem;
+  width: 1.333rem;
+  margin-bottom: -6px;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(51%) saturate(396%) hue-rotate(134deg) brightness(93%) contrast(90%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(87%) saturate(425%) hue-rotate(137deg) brightness(97%) contrast(85%);
+  }
 }
 
 html {font-size: 100%;} /* 16px */
@@ -77,9 +90,6 @@ small {font-size: 0.750rem; /* 12px */}
 /* Medium desktops */
 @media (min-width: 1024px) {
   /* e.g., increase padding/margins, show sidebars */
-  html {
-    scroll-behavior: auto;
-  }
 }
 
 /* Large desktops / wide screens */
