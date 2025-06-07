@@ -17,13 +17,21 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
   background-color: var(--background);
   color: var(--text);
-  padding-top: 50px;
   padding-bottom: 1000px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +77,9 @@ small {font-size: 0.750rem; /* 12px */}
 /* Medium desktops */
 @media (min-width: 1024px) {
   /* e.g., increase padding/margins, show sidebars */
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* Large desktops / wide screens */

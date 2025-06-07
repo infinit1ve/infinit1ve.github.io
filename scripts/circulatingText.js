@@ -1,4 +1,4 @@
-const words = ["do stuff.", "learn.", "vibe.", "write.", "tinker.", "overthink."];
+const words = ["do stuff.", "learn.", "vibe.", "write.", "tinker."];
 let currentWordList = shuffle([...words]);
 let wordIndex = 0;
 let charIndex = 0;
