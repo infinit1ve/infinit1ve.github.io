@@ -48,6 +48,22 @@ a {
   color: var(--accent);
 }
 
+select {
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  background-color: var(--background);
+  padding: 2px;
+  border-radius: 0;
+  color: var(--text);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 100%;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
 .icon {
   height: 1.333rem;
   width: 1.333rem;

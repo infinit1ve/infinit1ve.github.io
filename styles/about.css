@@ -43,6 +43,28 @@
   opacity: 0;
 }
 
+.about-section-decoration {
+  z-index: -1;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  margin-top: -90vh;
+  overflow: hidden;
+}
+
+.about-section-decoration img {
+  position: absolute;
+  height: 6vh;
+  opacity: 0.2;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(46%) saturate(3152%) hue-rotate(187deg) brightness(98%) contrast(90%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-section-decoration img {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(14%) saturate(2226%) hue-rotate(137deg) brightness(99%) contrast(87%);
+  }
+}
+
 /* Small tablets (portrait) */
 @media (min-width: 480px) {
   /* e.g., increase font sizes, spacing */
@@ -61,6 +83,9 @@
     height: 10vw;
     opacity: 1;
   }
+  .about-section-decoration img {
+    height: 4vw;
+  } 
 }
 
 /* Large desktops / wide screens */
